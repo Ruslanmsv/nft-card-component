@@ -48,7 +48,6 @@ body {
   display: block;
   border-radius: 8px;
   overflow: hidden;
-  /* width: 100%; */
 }
 
 .nft-img {
@@ -70,20 +69,6 @@ body {
   border-radius: 8px;
 }
 
-.img-link:hover .img-hover {
-  display: block;
-}
-
-.img-link:hover {
-  /* background-color: red;
-  opacity: 0.5; */
-}
-
-/* .img-link:hover img
- {
-    visibility: hidden;
-} */
-
 .title {
   margin-top: 24px;
   font-size: 22px;
@@ -94,10 +79,6 @@ body {
 .title-link {
   color: white;
   text-decoration: none;
-}
-
-.title-link:hover {
-  color: var(--cyan);
 }
 
 .description {
@@ -168,34 +149,41 @@ hr {
   text-decoration: none;
 }
 
-.author-link:hover {
-  color: var(--cyan);
+@media (hover: hover) {
+  a:hover {
+    color: var(--cyan);
+  }
+
+  .img-link:hover .img-hover {
+    display: block;
+  }
 }
 
 @media (max-width: 420px) {
-    .nft-card {
-        max-width: 327px;
-        padding: 24px;
-    }
+  .nft-card {
+    max-width: 327px;
+    padding: 24px;
+  }
 
-    .description {
-        margin-top: 12px;
-    }
-    .sale-info {
-        margin-top: 16px;
-    }
-    hr {
-        margin-top: 16px;
-    }
+  .description {
+    margin-top: 12px;
+  }
+  .sale-info {
+    margin-top: 16px;
+  }
+  hr {
+    margin-top: 16px;
+  }
 
-    .auth-info, .sale-end, .eth-price {
-        font-size: 15px;
-        line-height: 20px;
-    }
-    .img-hover {
-        width: 278px;
-        height: 278px;
-        transform: translateY(-278px);
-    }
-
+  .auth-info,
+  .sale-end,
+  .eth-price {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .img-hover {
+    width: 278px;
+    height: 278px;
+    transform: translateY(-278px);
+  }
 }
