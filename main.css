@@ -13,6 +13,18 @@ html {
   border: 0;
 }
 
+@supports (-webkit-touch-callout: none) {
+  body {
+    min-height: -webkit-fill-available;
+  }
+}
+
+@supports not (-webkit-touch-callout: none) {
+  body {
+    height: 100vh;
+  }
+}
+
 body {
   --soft-blue: hsl(215, 51%, 70%);
   --cyan: hsl(178, 100%, 50%);
@@ -20,7 +32,6 @@ body {
   --dark-blue-card-bg: hsl(216, 50%, 16%);
   --dark-blue-line: hsl(215, 32%, 27%);
 
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
